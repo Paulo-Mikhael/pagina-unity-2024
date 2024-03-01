@@ -1,0 +1,20 @@
+@media screen and (max-width:1440px){
+    header{
+        width: 98.7vw;
+    }
+    main{
+        width: 98.7vw;
+    }
+    section.examples{
+        width: 98.7vw;
+    }
+    section.why-unity{
+        width: 98.7vw;
+    }
+    section.final-section{
+        width: 98.7vw;
+    }
+    footer{
+        width: 98.7vw;
+    }
+}
