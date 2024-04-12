@@ -15,59 +15,148 @@
     font-weight: bold;
     cursor: pointer;
 }
+.hidden{
+    display: none;
+}
 header{
     width: 100vw;
-    height: 10vh;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    flex-direction: column;
 
-    & .header-container h2, & .fa-solid{
-        color: white;
-        cursor: pointer;
-    }
-    & #unity-icon{
-        width: 25px;
-    }
-    & .header-container h2{
-        font-size: 15px;
-    }
-    & .header-container .header-text{
-        margin-right: 80px;
-        display: flex;
-        width: 53%;
-        height: 100%;
-        align-items: center;
-        gap: 20px;
-    }
-    & .header-container{
-        width: 70%;
+    & .first-container{
+        width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-    }
-    & .header-buttons{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
 
-        & #btn-price{
+        & .header-container h2, & .fa-solid{
             color: white;
-            background-color: black;
-            border: 2px solid #2196f3;
-            padding: 13px;
-            border-radius: 25px;
-            letter-spacing: 3px;
-            font-weight: bold;
             cursor: pointer;
+        }
+        & .header-container{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .header-text{
+                display: flex;
+                width: 53%;
+                height: 100%;
+                align-items: center;
+                
+                & h2{
+                    width: 100px;
+                    transition: all 0.2s;
+                    font-size: 15px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        color: #2196f3;
+                    }
+                    &#learn, &#support{
+                        width: 80px;
+                    }
+                    &#community{
+                        width: 110px;
+                    }
+                }
+            }
+            & #unity-icon{
+                width: 30px;
+                margin-right: 20px;
+            }
+        }
+        & .header-buttons{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    
+            & #btn-price{
+                color: white;
+                background-color: black;
+                border: 2px solid #2196f3;
+                padding: 12px 14px 12px 19px;
+                border-radius: 25px;
+                letter-spacing: 3px;
+                font-size: 12px;
+                font-weight: bolder;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & p{
+                    margin-right: 10px;
+                }
+            }
+        }
+        & .icons{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 2px;
+            margin-left: 70px;
+
+            & i{
+                font-size: 19px;
+                padding: 8px;
+                border-radius: 50%;
+
+                &:hover{
+                    background-color: rgba(128, 128, 128, 0.26);
+                }
+            }
         }
     }
 }
+.hidden-cards{
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0;
 
+    & .cards{
+        width: 80%;
+        display: flex;
+        gap: 150px;
+
+        & p{
+            color: white;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            font-size: 15px;
+            transition: all 0.2s;
+            cursor: pointer;
+
+            &:hover{
+                color: #2196f3;
+            }
+
+            & b{
+                color: gray;
+                cursor: text;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
 main{
     background-image: url(../images/UnityProHero.jpg);
     background-position: center;
@@ -75,7 +164,7 @@ main{
     display: flex;
     align-items: end;
     width: 100vw;
-    height: 115vh;
+    height: 45pc;
 
     & h1, & h3{
         color: white;
@@ -108,7 +197,7 @@ section.examples{
         height: 70%;
 
         & h3{
-            font-size: 55px;
+            font-size: 50px;
             font-weight: lighter;
             padding-bottom: 7%;
         }
@@ -139,7 +228,7 @@ section.why-unity{
             }
         }
         & .subtitle{
-            width: 65%;
+            width: 100%;
             height: 25%;
 
             & h4{
@@ -208,7 +297,7 @@ section.final-section{
     width: 100vw;
     height: 240.3vh;
     padding: 4% 14.8% 3% 14.8%;
-
+    
     & .final-content{
         width: 100%;
         height: 100%;
