@@ -1,8 +1,8 @@
 <h1>
-    <a href="https://paulo-mikhael.github.io/fastask/">Fastask - Gerenciador de tarefas</a>
+    <a href="https://paulo-mikhael.github.io/pagina-unity-2024">Fastask - Gerenciador de tarefas</a>
 </h1>
 <h2>Sobre ✏️</h2>
-    <h3>A Fastask é uma aplicação web que busca facilitar a gestão de tarefas, a página possui um design limpo e intuitivo, seu funcionamento consiste principalmente em criar, excluir e editar tarefas, elas podem ser separadas por categorias, e as tarefas deletadas ficam armazenadas em seu campo respectivo para o usuário fazer o que bem entender com elas.</h3>
+    <h3>A página da unity tem um design único</h3>
 <h2>Tecnologias 💻</h2>
     <div>
         <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
